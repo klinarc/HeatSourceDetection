@@ -1,0 +1,17 @@
+FLIR ONE Battery testing:
+
+The FLIR ONE can not be charged via microUSB pass-through on Android devices
+(it is possible on iOS).
+
+Charging is done with a microUSB cable at a 1A power source.
+
+The battery capacity is 350mAh
+
+16:23 full
+17:18 empty
+17:53 full
+18:46 empty
+----
+~55 minutes to discharged
+~35 minutes to charge
+----
