@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="kupo.fliruah.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttons">
+        <Button
+            android:id="@+id/simButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sim dev"
+            android:onClick="onCreateSim" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="spot meter"
+            android:id="@+id/spotmeter"
+            android:onClick="onCreateSpotMeter"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save frame"
+            android:onClick="onSaveFrame"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+
+            android:id="@+id/thermalView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/crosshair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/info">
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/thermalView"
+            android:hint="empty"/>
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/status"
+            android:hint="battery information"/>
+        <TextView
+            android:id="@+id/battery_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@+id/battery"
+            android:hint="battery status"/>
+        <TextView
+            android:id="@+id/battery_perc"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/battery_state"
+            android:hint="battery percentage"/>
+        <TextView
+            android:id="@+id/torch"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/battery_perc"
+            android:hint="torch status"/>
+        <TextView
+            android:id="@+id/image_type"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/torch"
+            android:hint="image type"/>
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/image_type"
+            android:hint="temp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
